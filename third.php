@@ -9,7 +9,7 @@
 <input type="submit" name="" value="Send">
 </form>
 <h2>GET-method</h2>
-<form class=""action="test.php" method="get">
+<form class=""action="get.php" method="get">
 <label for="fn">Firstname</label> <br>
 <input type="text" id="fn"name="fname" value=""><br>
 <label for="ln">Lastname</label> <br>
