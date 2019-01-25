@@ -1,4 +1,13 @@
 <?php include "menu.php";?>
+<?php
+session_start();
+if (isset($_SESSION['logged_in'])){
+    echo ''.$_SESSION['username'].'';
+}
+else{
+    echo'<b>Guest</b>';
+}
+?>
     <h1>Assosiative array</h1>
     <?php
     $students=array(
