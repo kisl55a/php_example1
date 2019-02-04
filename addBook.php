@@ -3,7 +3,8 @@
 <?php 
 print_r($_POST); 
 
-$stmt=$db->prepare("INSERT INTO books (books_id,books,author,isbn) VALUES(:idBook,:naBook,:auBook,:isBook)"); 
+$stmt=$db->prepare("INSERT INTO books (books_id,books_name,author,isbn) 
+VALUES(:idBook,:naBook,:auBook,:isBook)"); 
 $stmt->bindParam(':idBook', $b_id); 
 $stmt->bindParam(':naBook', $b_name); 
 $stmt->bindParam(':auBook', $b_author); 

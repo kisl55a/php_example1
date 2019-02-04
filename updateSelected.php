@@ -3,7 +3,7 @@
 <?php
 
 $stmt=$db->prepare("UPDATE books SET books_name=:naBook,author=:auBook,isbn=:isBook WHERE 
-  books_id=idBook");
+  books_id=:idBook");
 		$stmt->bindParam(':idBook', $b_id);
 		$stmt->bindParam(':naBook', $b_name);
         $stmt->bindParam(':auBook', $b_author);
