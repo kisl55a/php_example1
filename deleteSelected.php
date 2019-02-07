@@ -5,9 +5,7 @@
 $stmt=$db->prepare("DELETE FROM books WHERE 
 books_id=:idBook");
 		$stmt->bindParam(':idBook', $b_id);
-	    $b_id=$_POST['b_id'];
-
-    
-        $stmt->execute();
+		$b_id=$_POST['b_id'];
+		$stmt->execute();
 ?>
 <?php include "footer.php";?>
