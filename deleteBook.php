@@ -2,7 +2,7 @@
 <?php include "connection.php"; ?>
 <h1>Delete Book</h1>
 <p>
-  <form class="" action="deleteSelected.php" method="post">
+  <form class="" action="deleteSelected1.php" method="post">
     <input type="" name="b_id" value="<?php echo $_GET['id']; ?> "hidden>
      <br><label for="">books_name</label> <br>
     <input type="text" name="b_name" value="<?php echo $_GET['name']; ?>" disabled> <br>

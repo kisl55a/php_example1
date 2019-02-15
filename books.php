@@ -11,10 +11,10 @@
 </p>
 <p> <a href="bookForm.php"><button> Add new book</button></a>
 </p>
-<table border="1">
+<table class="table table-bordered table-hover">
     <thead>
         <tr>
-            <th>Books_id</th> <th>name</th> <th> Author</th> <th>isbn</th> <th>Update</th>
+            <th>Books_id</th> <th>name</th> <th> Author</th> <th>isbn</th> <th>Update</th> <th>Delete</th>
         </tr>
     </thead>
     <tbody>
@@ -36,7 +36,7 @@ foreach($books as $row){
     echo $row['author'];
     echo'&isbn=';
     echo $row['isbn'];
-    echo '"><button>Update</button></a></td>';
+    echo '"><button class="btn btn-primary">Update</button></a></td>';
     //delete
     echo'<td><a href="deleteBook.php?id=';
     echo $row['books_id'];
@@ -46,7 +46,7 @@ foreach($books as $row){
     echo $row['author'];
     echo'&isbn=';
     echo $row['isbn'];
-    echo '"><button>Delete</button></a></td>';
+    echo '"><button class="btn btn-danger">Delete</button></a></td>';
     //delete
      echo '</tr>';
 
